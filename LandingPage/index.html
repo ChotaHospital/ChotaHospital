@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b44ee0a8b4.js"
+      crossorigin="anonymous"
+    ></script>
+  </div>
+
+  <!-- <script>
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script> -->
+    <link rel="shortcut icon" type="x-icon" href="./img/titleLogo.png" />
+  </head>
+  <body>
+    <div class="top">
+      <a href="#Home" class="skip">Skip to main content</a>
+      <!-- <div class="popup" onclick="myFunction()"> -->
+      <!-- <a href="" id="LOGIN" class="login" >Login</a> -->
+      <button id="LOGIN" class="login" >Login</button>
+    <!-- </div> -->
+  </div>
+    <header class="header">
+      <div class="navhead">
+        <a href="#Home">
+          <img src="./img/logo.png" alt="logo" class="logo" />
+        </a>
+
+        <nav class="navbar">
+          <a href="#Home">Home</a>
+          <a href="#OurDoctors">Our Doctors</a>
+          <a href="#Specialities">Specialities</a>
+          <a href="#AboutUs">About Us</a>
+          <a href="#Contact">Contact</a>
+        </nav>
+
+        <div class="book">
+          <a href="/hospitalmanagementsystem/AppointmentForm/index.html" target="_blank">
+            <i class="fa-solid fa-calendar-days"></i>
+            Book Appointment
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section id="Home" class="home">
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to Our <span>Hospital</span></h1>
+          <p>
+            Our hospital offers comprehensive medical care with expert doctors
+            and state-of-the-art facilities. We are dedicated to ensuring your
+            health and safety.
+          </p>
+          <div class="hero-buttons">
+            <a
+              href="/hospitalmanagementsystem/AppointmentForm/index.html"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Book an Appointment
+            </a>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services">
+        <div class="service-item">
+          <div class="icon">
+            <i class="fa-solid fa-syringe"></i>
+          </div>
+          <h3>Advanced Medical Services</h3>
+          <p>
+            Our hospital provides cutting-edge medical services, including
+            diagnostics, treatments, and surgeries with the latest technology.
+          </p>
+        </div>
+        <div class="service-item">
+          <div class="icon">
+            <i class="fa-solid fa-user-doctor"></i>
+          </div>
+          <h3>Experienced Medical Staff</h3>
+          <p>
+            Our team of healthcare professionals is highly trained to provide
+            personalized, compassionate care for every patient.
+          </p>
+        </div>
+        <div class="service-item">
+          <div class="icon">
+            <i class="fa-regular fa-hospital"></i>
+          </div>
+          <h3>24/7 Emergency Services</h3>
+          <p>
+            Our emergency department is open 24/7, ensuring that critical care
+            is available whenever you need it most.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <!-- <section id="Home" class="home">
+      <div class="slider Home">
+        <div class="slider-images">
+          <div class="img-container" id="pic1">
+            <img src="./img/pic1.png" alt="Hospital Picture" />
+          </div>
+          <div class="img-container" id="pic2">
+            <img src="./img/pic2.png" alt="Hospital Picture" />
+          </div>
+          <div class="img-container" id="pic3">
+            <img src="./img/pic3.png" alt="Hospital Picture" />
+          </div>
+          <div class="img-container" id="pic4">
+            <img src="./img/pic4.png" alt="Hospital Picture" />
+          </div>
+        </div>
+      </div>
+      <div class="databox">
+        <div class="box">
+          <div class="content">
+            <h2>Reviews<br /><span>4.5/5</span></h2>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <h2>Patients Served<br /><span>2.3k+</span></h2>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <h2>Women Staff<br /><span>52%</span></h2>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="dr" id="OurDoctors">
+      <div class="Heading">Our Doctors</div>
+      <div class="Description">
+        <q>
+          Our hospital offers state-of-the-art facilities, ensuring advanced
+          medical care and a comfortable patient experience.
+        </q>
+      </div>
+
+      <div class="boxContainer">
+        <div class="box">
+          <img src="./img/jeff-bezos.jpeg" alt="" />
+          <h3>Dr. Jeff Bezos</h3>
+          <p>CHAIRMAN CARDIAC SCIENCES</p>
+          <div class="line"></div>
+          <div class="experience">
+            <i class="fa-regular fa-calendar"></i>
+            39 years
+          </div>
+          <a href="#" class="drBtn"
+            ><i class="fa-solid fa-book"></i> Know More</a
+          >
+        </div>
+        <div class="box">
+          <img src="./img/Steve-Jobs.webp" alt="" />
+          <h3>Dr. Steve Jobs</h3>
+          <p>HEAD EMERGENCY</p>
+          <div class="line"></div>
+          <div class="experience">
+            <i class="fa-regular fa-calendar"></i>
+            39 years
+          </div>
+          <a href="#" class="drBtn"
+            ><i class="fa-solid fa-book"></i> Know More</a
+          >
+        </div>
+        <div class="box">
+          <img src="./img/Joe-Biden.avif" alt="" />
+          <h3>Dr. Joe Biden</h3>
+          <p>CHAIRMAN CARDIAC SCIENCES</p>
+          <div class="line"></div>
+          <div class="experience">
+            <i class="fa-regular fa-calendar"></i>
+            39 years
+          </div>
+          <a href="#" class="drBtn"
+            ><i class="fa-solid fa-book"></i> Know More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="specialities" id="Specialities">
+      <div class="Heading">Specialities</div>
+      <div class="Description">
+        <q>
+          Our team of experienced doctors is dedicated to providing
+          compassionate and comprehensive healthcare tailored to each patient's
+          needs.
+        </q>
+      </div>
+      <div class="cardContainer">
+        <div class="card">
+          <img src="./img/Cardiology.png" alt="Cardiology" class="cardImg" />
+          <div class="cardBody">
+            <div class="card-title-container">
+              <h1 class="card-title">Cardiology</h1>
+            </div>
+            <div class="card-content">
+              <p class="card-info">
+                Cardiology is a medical specialty focused on diagnosing,
+                treating, and preventing diseases related to the heart and blood
+                vessels. Cardiologists manage conditions like coronary artery
+                disease, heart attacks, arrhythmias, heart failure, and
+                hypertension.
+              </p>
+              <a href="#" class="readBtn"
+                >Read More <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/Neurology.png" alt="Neurology" class="cardImg" />
+          <div class="cardBody">
+            <div class="card-title-container">
+              <h1 class="card-title">Neurology</h1>
+            </div>
+            <div class="card-content">
+              <p class="card-info">
+                Neurology is a branch of medicine that focuses on diagnosing and
+                treating disorders of the brain, spinal cord, and nervous
+                system. Neurologists deal with conditions such as epilepsy,
+                strokes, migraines, Alzheimer's disease, Parkinson's disease,
+                and multiple sclerosis.
+              </p>
+              <a href="#" class="readBtn"
+                >Read More <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/Gastrology.png" alt="Gastrology" class="cardImg" />
+          <div class="cardBody">
+            <div class="card-title-container">
+              <h1 class="card-title">Gastrology</h1>
+            </div>
+            <div class="card-content">
+              <p class="card-info">
+                Gastroenterology is a medical specialty focused on diagnosing
+                and treating digestive system disorders, including the
+                esophagus, liver, gallbladder, and pancreas. Gastroenterologists
+                manage conditions like acid reflux, ulcers, IBD, hepatitis, and
+                pancreatitis.
+              </p>
+              <a href="#" class="readBtn"
+                >Read More <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/Oncology.png" alt="Oncology" class="cardImg" />
+          <div class="cardBody">
+            <div class="card-title-container">
+              <h1 class="card-title">Oncology</h1>
+            </div>
+            <div class="card-content">
+              <p class="card-info">
+                Oncology is the branch of medicine that treats cancer.
+                Oncologists use different methods, such as chemotherapy,
+                radiation, immunotherapy, and targeted therapies, to fight
+                cancer, tailored to each patient's specific type of cancer and
+                stage of the disease.
+              </p>
+              <a href="#" class="readBtn"
+                >Read More <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="aboutUs" id="AboutUs">
+      <div class="Heading">About Us</div>
+      <div class="aboutContainer">
+        <div class="Description aboutDesc">
+          <p>
+            At <strong>[Hospital Name]</strong>, we are dedicated to delivering
+            exceptional healthcare services with a patient-centric approach.
+            With state-of-the-art facilities and a team of highly qualified
+            medical professionals, we provide comprehensive care across a wide
+            range of specialties. Our focus on innovation, compassionate care,
+            and cutting-edge technology allows us to meet the unique needs of
+            every patient, ensuring a positive healing experience. <br /><br />
+            Since our founding, we have been committed to not only treating
+            illness but also promoting overall well-being and preventive
+            healthcare. Our hospital is recognized for its excellence in patient
+            care, medical research, and community health programs.
+          </p>
+
+          <h2 class="subHeading">Mission</h2>
+          <p>
+            Our mission is to provide high-quality, accessible, and
+            compassionate healthcare that enhances the well-being of individuals
+            and families. We strive to integrate advanced medical technology
+            with personalized care, ensuring the best possible outcomes for our
+            patients.
+          </p>
+
+          <h2 class="subHeading">Vision</h2>
+          <p>
+            To be a leader in healthcare, recognized for setting the standard in
+            patient care, medical excellence, and innovative practices. We aim
+            to continually evolve, expand our services, and contribute to the
+            health and wellness of the communities we serve.
+          </p>
+
+          <h2 class="subHeading">Chairman’s Message</h2>
+          <p>
+            <q>
+              At [Hospital Name], we are dedicated to not only treating
+              illnesses but also enhancing the overall quality of life for our
+              patients. Our commitment to advanced medical care, driven by
+              innovation and compassion, sets us apart as a leader in
+              healthcare. As we grow and evolve, our focus remains steadfast:
+              delivering personalized care, fostering hope, and making a
+              positive impact in every patient's life.
+            </q>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="Contact">
+      <div class="Heading">Contact</div>
+
+      <div class="map">
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57155.07141399976!2d80.1162882486328!3d26.449540499999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c49fa39cfefaf%3A0x1716805077816869!2sPranveer%20Singh%20Institute%20of%20Technology%2C%20PSIT%20Kanpur!5e0!3m2!1sen!2sin!4v1727627552401!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <a href="#Home">
+        <img src="./img/logo.png" alt="logo" class="logo" />
+      </a>
+      <div class="social">
+        <p>Connect to us</p>
+        <div class="logo">
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook fb"></i>
+          </a>
+          <a href="https://www.x.com " target="_blank">
+            <i class="fa-brands fa-x-twitter tw"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram in"></i>
+          </a>
+          <a href="https://www.youtube.com" target="_blank">
+            <i class="fa-brands fa-youtube yt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="terms">
+        <p>&copy; 2024 Healthcare. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <div class="popUp">
+    </div>
+    <div class="overlay">
+      <div class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="container">
+        <div class="sign-up-form">
+          <div class="form-image">
+            <p>
+              <q
+                >Let food be thy medicine and <br />
+                medicine be thy food.
+              </q>
+              <br />
+              - Hippocrates
+            </p>
+            <img src="./img/doctorimage.jpeg" alt="" />
+          </div>
+          <form class="form-content" action="login.php" method="post">
+            <div class="form-heading">
+              <img src="./img/logo.png" alt="" />
+              <h1>Welcome Back</h1>
+            </div>
+  
+            <div class="input-wrap">
+              <div class="input">
+                <input type="text" name="username"  id="username" placeholder=" " />
+                <div class="label">
+                  <label for="username">Username</label>
+                </div>
+              </div>
+  
+              <div class="input">
+                <input type="password" name="password" id="password" placeholder=" " />
+                <div class="label">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+  
+              <button type="submit">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+    </div>
+
+    <script src="script.js"></script>
+   
+  </body>
+</html>

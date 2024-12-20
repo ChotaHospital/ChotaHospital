@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>appointment-form</title>
+
+    <link rel="stylesheet" href="./styles1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form1">
+        <h2 id="topic"><big>PATIENT INFORMATION</big></h2>
+        <input id="a" type="text" placeholder="Firstname" required />
+        <input type="text" placeholder="Lastname" />
+        <br />
+        <label><big>Gender :</big></label>
+        <div class="radio-group">
+          <label
+            ><input
+              type="radio"
+              id="gender_male"
+              name="gender"
+              value="Male"
+              required
+            />
+            Male</label
+          >
+          <label
+            ><input
+              type="radio"
+              id="gender_female"
+              name="gender"
+              value="Female"
+            />
+            Female</label
+          >
+          <label
+            ><input
+              type="radio"
+              id="gender_other"
+              name="gender"
+              value="Other"
+            />
+            Other</label
+          >
+        </div>
+        <label for="date_of_birth"><big>Enter date of birth :</big></label>
+        <label for=" Patient" id="Patient">
+          <big>Enter Patient Id </big>
+          <p id="he">(*optional)</p>
+          <big> :</big></label
+        >
+        <br />
+        <input type="date" id="date_of_birth" name="date_of_birth" required />
+
+        <input type="text" id="pap" placeholder="If visiting again" />
+        <div class="btn">
+          <button type="button" id="next1">Next</button>
+        </div>
+      </form>
+      <form id="form2">
+        <h2 id="topic"><big>CONTACT INFORMATION</big></h2>
+        <label><big>Mobile Number :</big></label>
+        <input
+          type="tel"
+          id="mobile"
+          name="mobile"
+          pattern="^\[0-9]{10}$"
+          placeholder="XXXXXXXXXX"
+          required
+        />
+        <label for="email"><big>Enter your email:</big></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@gmail.com"
+        />
+        <label><big>Street Adress:</big></label>
+        <input type="text" placeholder="house no, street name, area name," />
+        <label><big>City:</big></label>
+        <input type="text" id="city" placeholder="Lucknow" />
+        <label><big>State:</big></label>
+        <input type="text" id="state" placeholder="Uttar Pradesh" />
+        <div class="btn">
+          <button type="button" id="back1">Back</button>
+          <button type="button" id="next2">Next</button>
+        </div>
+      </form>
+      <form id="form3">
+        <h2 id="topic"><big>PREFRENCE</big></h2>
+        <label for="department"
+          ><big>Choose the department you want to visit:</big></label
+        >
+        <br />
+        <select id="department">
+          <option value="Cardiologist">Cardiologist</option>
+          <option value="Physician">Physician</option>
+          <option value="Oncology">Oncology</option>
+          <option value="Gynecology">Gynecology</option>
+          <option value="Health check-up">Health check-up</option>
+        </select>
+        <br />
+        <label for="doctor"
+          ><big>Select your preferred doctor, if any:</big></label
+        >
+        <br />
+        <select id="doctor">
+          <option value="a">Mr a</option>
+          <option value="b">Mr b</option>
+          <option value="c">Mr c</option>
+          <option value="d">Mr d</option>
+          <option value="e">Mr e</option>
+        </select>
+        <br />
+        <label><big>Choose the time-slot you want to visit in:</big></label>
+        <br />
+        <div class="button-container">
+          <button class="time-btn" id="morning-btn" type="button">
+            Morning (9am - 12pm)
+          </button>
+          <button class="time-btn" id="noon-btn" type="button">
+            Noon (1pm - 4pm)
+          </button>
+          <button class="time-btn" id="evening-btn" type="button">
+            Evening (5pm - 9pm)
+          </button>
+        </div>
+
+        <div class="btn">
+          <button type="button" id="back2">Back</button>
+          <button type="button">Submit</button>
+        </div>
+      </form>
+
+      <div class="steprow">
+        <div id="progress"></div>
+        <div class="stepcol">Step 1</div>
+        <div class="stepcol">Step 2</div>
+        <div class="stepcol">Step 3</div>
+      </div>
+    </div>
+    <script>
+      const buttons = document.querySelectorAll('.time-btn');
+
+      // Add event listener to each button
+      const timeButtons = document.querySelectorAll('.time-btn');
+
+      // Loop through each button and add event listener
+      timeButtons.forEach((button) => {
+        button.addEventListener('click', function () {
+          // Remove 'selected' class from all buttons
+          timeButtons.forEach((btn) => btn.classList.remove('selected'));
+
+          // Add 'selected' class to the clicked button
+          button.classList.add('selected');
+        });
+      });
+
+      var form1 = document.getElementById('form1');
+      var form2 = document.getElementById('form2');
+      var form3 = document.getElementById('form3');
+
+      var next1 = document.getElementById('next1');
+      var next2 = document.getElementById('next2');
+      var back1 = document.getElementById('back1');
+
+      var progress = document.getElementById('progress');
+
+      next1.onclick = function () {
+        form1.style.left = '-500px';
+        form2.style.left = '40px';
+        progress.style.width = '320px';
+      };
+      back1.onclick = function () {
+        form1.style.left = '40px';
+        form2.style.left = '500px';
+        progress.style.width = '160px';
+      };
+      next2.onclick = function () {
+        form2.style.left = '-500px';
+        form3.style.left = '40px';
+        progress.style.width = '500px';
+      };
+      back2.onclick = function () {
+        form2.style.left = '40px';
+        form3.style.left = '500px';
+        progress.style.width = '300px';
+      };
+    </script>
+  </body>
+</html>

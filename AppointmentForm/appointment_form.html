@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Request Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <div class="header">
+        <img src="titleLogo.png" alt="Hospital Logo" class="logo">
+        <h2 class="hospital-name">Hospital Name</h2>
+    </div>
+    <h1>Appointment Request Form</h1>
+
+    <form action="/submit-form" method="POST">
+        <!-- Full Name -->
+        <div class="form-group name-group">
+            <div>
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+            <div>
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+        </div>
+
+        <!-- Gender Selection -->
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" id="gender_male" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" id="gender_female" name="gender" value="Female"> Female</label>
+                <label><input type="radio" id="gender_other" name="gender" value="Other"> Other</label>
+            </div>
+        </div>
+
+        <!-- Contact Number -->
+        <div class="form-group">
+            <label for="phone">Contact Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" required pattern="\(\d{3}\) \d{3}-\d{4}">
+        </div>
+
+        <!-- Emergency Contact Information -->
+        <div class="form-group">
+            <label for="emergency_contact_name">Emergency Contact Name</label>
+            <input type="text" id="emergency_contact_name" name="emergency_contact_name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="emergency_contact_phone">Emergency Contact Phone</label>
+            <input type="tel" id="emergency_contact_phone" name="emergency_contact_phone" placeholder="(000) 000-0000" required pattern="\(\d{3}\) \d{3}-\d{4}">
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+
+        <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+        </div>
+
+        <div class="form-group">
+            <label for="state">State / Province</label>
+            <input type="text" id="state" name="state" required>
+        </div>
+
+        <div class="form-group">
+            <label for="postal_code">Postal / Zip Code</label>
+            <input type="text" id="postal_code" name="postal_code" required>
+        </div>
+
+        <!-- HTML5 Date and Time Picker -->
+        <div class="form-group">
+            <label for="appointment_date">What date works best for you?</label>
+            <input type="date" id="appointment_date" name="appointment_date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="appointment_time">What time works best for you?</label>
+            <input type="time" id="appointment_time" name="appointment_time" required>
+        </div>
+
+        <!-- Dropdown for Doctors -->
+        <div class="form-group">
+            <label for="doctor">Select a Doctor</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">Select a doctor...</option>
+                <option value="dr_smith">Dr. Smith</option>
+                <option value="dr_jones">Dr. Jones</option>
+                <option value="dr_brown">Dr. Brown</option>
+                <option value="dr_williams">Dr. Williams</option>
+            </select>
+        </div>
+
+        <!-- Promotional Services -->
+        <div class="form-group">
+            <fieldset>
+                <legend>Have you used our services before?</legend>
+                <div class="radio-group">
+                    <label><input type="radio" id="promo_yes" name="promo" value="Yes" required> Yes</label>
+                    <label><input type="radio" id="promo_no" name="promo" value="No"> No</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <!-- Additional Comments -->
+        <div class="form-group">
+            <label for="comments">Briefly state the reason of your visit <label for="option" style="color: red; display: inline;font-size: small;" >(*optional)</label> </label>
+            <textarea id="comments" name="comments"></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Submit Request</button>
+    </form>
+</div>
+
+</body>
+</html>

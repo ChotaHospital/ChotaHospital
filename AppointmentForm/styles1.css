@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif; 
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(pic4.jpg);
+    background-position: center; 
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    margin: 8% auto;
+    background: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#topic {
+    text-align: center;
+    margin-bottom: 30px;
+    color:#035bcec9;
+    font-size:19px;
+}
+
+.container form {
+    width: 400px;
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    transition: 0.5s;
+}
+
+form input {
+    width: 100%;
+    padding: 13px 3px 8px;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    font-size: 14.5px;
+    margin-bottom: 15px;
+}
+
+.radio-group {
+    margin-bottom: 20px;
+}
+
+
+.radio-group label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 50px; 
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.radio-group input {
+    margin-right: 5px; 
+}
+
+
+::placeholder{
+color: #777;
+}
+.btn
+{
+    width: 100%; 
+    margin: 20px auto;
+    text-align: center;
+}
+form button{
+    width: 110px;
+    height: 30px;
+    margin:0 10px;
+    background: linear-gradient(to right,#0022ff ,#6bebff);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor:pointer;
+    font-size:large;
+
+}
+form button:hover
+{
+    box-shadow: 2px 2px 2px 2px #4fa6fd;
+}
+#age{
+    border: 1px solid #777;
+    margin-top: 10px;
+    width: 30%;
+    height: 5px;
+    border-radius: 20px;
+   color: #777;
+}
+#city
+{
+    width: 35.5%;
+    margin-right: 20px;
+}
+#state
+{
+    width: 39%;
+}
+#form2
+{
+    left: 550px;
+}
+#form3
+{
+    left: 550px;
+}
+.steprow{
+    width: 500px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+.stepcol
+{
+    width: 200px;
+    text-align: center;
+    color:#333;
+    position: relative;
+
+}
+#progress
+{
+    position: absolute;
+    height: 40px;
+    width: 170px;
+    background:linear-gradient(to right,#0022ff ,#6bebff); 
+}
+#progress::after
+{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #6bebff
+}
+#department
+{
+    height: 30px;
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 -1px 5px -1px #b0b0b0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #777;
+    font-size: 12px;
+}
+#doctor
+{
+    height: 30px;
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 -1px 5px -1px #b0b0b0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #777;
+    font-size: 12px;
+}
+   
+   .button-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    width: 200px; 
+}
+
+.time-btn {
+    margin-top: 2px;
+    font-size: 10px;
+    color: #333;
+    border-radius: 40px;
+    background:#ffa9e152;
+    cursor: pointer;
+    width: 70%; 
+    text-align: center; 
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-left: 0;
+}
+
+
+.time-btn:hover {
+    background-color: #529aff;
+    color: #fff;
+}
+.time-btn.selected {
+    background-color: #007BFF;
+    color: white;
+    border-color: #007BFF;
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#morning-btn
+{
+margin-top: 15px;
+font-size: 11.5px;
+}
+#noon-btn
+{
+    font-size: 11.5px;
+}
+#evening-btn
+{
+    font-size: 11.5px;
+}
+#date_of_birth
+{
+    font-size: 13px;
+    width: 130px;
+}
+#dob{
+    font-size: xx;
+
+}
+#pap
+{
+    width: 210px;
+    margin-left: 42px;
+}
+#Patient
+{
+margin-left: 68px;
+}
+#he
+{
+display: inline;
+color: red;
+}
